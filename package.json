@@ -2,6 +2,7 @@
     "name": "@berrywallet/extberry",
     "description": "Browser extension wrapper",
     "version": "1.0.0",
+    "author": "Berrywallet <berry@berrywallet.com>",
     "main": "./dist/index.js",
     "typings": "dist/index",
     "license": "LGPL-3.0",
