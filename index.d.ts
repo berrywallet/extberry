@@ -42,5 +42,5 @@ export declare class ExtberryPlatform {
 
 export function mapExtberryToGlobalChrome(): void;
 
-type exberryInstance = typeof ExtberryPlatform;
+declare const exberryInstance: ExtberryPlatform;
 export default exberryInstance;
