@@ -1,5 +1,5 @@
 {
-    "name": "@berrywallet/extberry",
+    "name": "extberry",
     "description": "Browser extension wrapper",
     "version": "1.0.0",
     "author": "Berrywallet <berry@berrywallet.com>",

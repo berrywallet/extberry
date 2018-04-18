@@ -2,11 +2,11 @@
 
 This library helps you to create crossbrowser extensions, when you have different API.
 
-[![npm version](https://badge.fury.io/js/%40berrywallet%2Fextberry.svg)](https://badge.fury.io/js/%40berrywallet%2Fextberry)
+[![npm version](https://badge.fury.io/js/extberry.svg)](https://badge.fury.io/js/extberry)
 
 ## Install Extberry
 ```bash
-npm install --save @berrywallet/extberry
+npm install --save extberry
 ```
 
 
