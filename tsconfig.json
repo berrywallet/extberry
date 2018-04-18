@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "rootDir": "./src",
+        "outDir": "./dist/",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "lib": ["es5", "es2015", "dom", "scripthost"],
+        "preserveConstEnums": true,
+        "declaration": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

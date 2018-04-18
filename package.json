@@ -1,0 +1,26 @@
+{
+    "name": "@berrywallet/extberry",
+    "description": "Browser extension wrapper",
+    "version": "1.0.0",
+    "main": "./dist/index.js",
+    "typings": "dist/index",
+    "license": "LGPL-3.0",
+    "repository": "https://github.com/berrywallet/extberry",
+    "scripts": {
+        "build": "rm -rf ./dist && $(npm bin)/tsc",
+        "test": "mocha -t 20000",
+        "coverage": "$(npm bin)/istanbul cover node_modules/mocha/bin/_mocha -- --bail --timeout 200 --slow 99999 -R dot"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.64",
+        "@types/core-js": "^0.9.46",
+        "@types/es6-promise": "^3.3.0",
+        "istanbul": "^0.4.5",
+        "jshint": "^2.9.5",
+        "mocha": "^5.1.0",
+        "typescript": "^2.8.1"
+    },
+    "dependencies": {
+        "promise": "^8.0.1"
+    }
+}
