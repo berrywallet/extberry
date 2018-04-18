@@ -11,7 +11,7 @@
         "noLib": false,
         "lib": ["es5", "es2015", "dom", "scripthost"],
         "preserveConstEnums": true,
-        "declaration": true,
+        "declaration": false,
         "suppressImplicitAnyIndexErrors": true,
         "allowSyntheticDefaultImports": true
     },

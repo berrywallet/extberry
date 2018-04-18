@@ -1,12 +1,6 @@
-declare global {
-    export interface Window {
-        browser: any;
-    }
-}
+export declare type SendMessageEvent = (request: any, responseCallback?: (response: any) => void) => void;
 
-declare type SendMessageEvent = (request: any, responseCallback?: (response: any) => void) => void;
-
-interface ExtberryExtension {
+export interface ExtberryExtension {
     alarms?: typeof chrome.alarms;
     bookmarks?: typeof chrome.bookmarks;
     browserAction?: typeof chrome.browserAction;
@@ -29,12 +23,24 @@ interface ExtberryExtension {
     api?: any;
     events?: any;
     extensionTypes?: string[];
-
-    initBaseApi(): void;
 }
 
+export declare class ExtberryPlatform {
 
-export {
-    SendMessageEvent,
-    ExtberryExtension
+    getExtension(): ExtberryExtension;
+
+    reload(): void;
+
+    openTab(createProperties: chrome.tabs.CreateProperties): Promise<chrome.tabs.Tab>;
+
+    runtime: typeof chrome.runtime;
+    tabs: typeof chrome.tabs;
+    notifications: typeof chrome.notifications;
+    manifest: chrome.runtime.Manifest;
+    version: string;
 }
+
+export function mapExtberryToGlobalChrome(): void;
+
+type exberryInstance = typeof ExtberryPlatform;
+export default exberryInstance;
