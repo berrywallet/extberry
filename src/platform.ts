@@ -1,5 +1,4 @@
 import {ExtensionProxy} from './extension-proxy';
-import Promise from "promise";
 
 export class ExtberryPlatform {
 

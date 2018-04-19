@@ -1,7 +1,7 @@
 {
     "name": "extberry",
     "description": "Browser extension wrapper",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "author": "Berrywallet <berry@berrywallet.com>",
     "main": "./dist/index.js",
     "typings": "./index.d.ts",
